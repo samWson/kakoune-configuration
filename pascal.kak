@@ -1,6 +1,11 @@
 # Pascal Programming language syntax highlighting for Kakoune editor.
+#
+# Reference: Free Pascal, https://freepascal.org
 # Author: Samuel Wilson
 # GitHub username: samWson
+#
+# This code is in the Public Domain. See the UNLICENSE file or
+# https://unlicense.org/ for details.
 
 # Detection
 hook global BufCreate .*[.](pas) %{
