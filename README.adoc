@@ -1,0 +1,6 @@
+= Kakoune Configuration
+
+== This Repository is in the Public Domain
+
+The contents of this repository is in the public domain. See the UNLICENSE file for details.
+
