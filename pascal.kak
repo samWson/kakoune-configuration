@@ -29,6 +29,8 @@ add-highlighter shared/pascal regions
 add-highlighter shared/pascal/code default-region group
 add-highlighter shared/pascal/string region -match-capture "'" "'" fill string
 add-highlighter shared/pascal/comment region '//' '$' fill comment
+
 add-highlighter shared/pascal/code/keyword regex \b(?i)(absolute|and|array|asm|begin|case|const|constructor|destructor|div|do|downto|else|end|file|for|function|goto|if|implementation|in|inherited|inline|interface|label|mod|nil|not|object|of|operator|or|packed|procedure|program|record|reintroduce|repeat|self|set|shl|shr|string|then|to|type|unit|until|uses|var|while|with|xor|as|class|dispinterface|except|exports|finalization|finally|initialization|inline|is|library|on|out|packed|property|raise|resourcestring|threadvar|try)\b 0:keyword
+add-highlighter shared/pascal/code/operator regex (\+|-|\*|\*{2}|\/|Div|Mod) 0:operator
 
 ]
