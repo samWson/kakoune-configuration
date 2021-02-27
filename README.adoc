@@ -1,6 +1,19 @@
 = Kakoune Configuration
 
+My personal Kakoune <<ke>> editor configuration. Features Pascal <<fp>> syntax highlighting.
+
+== Usage
+
+Clone the contents of this repository into the user configuration directory. If it exists it is likely in the `$KAKOUNE_CONFIG_DIR` variable. The Kakoune manpage *FILES* section contains information on how configuration files are loaded, `man kak`.
+
+The `pascal.kak` file needs to go in the `rc/filetype` directory. The directory can be found at the path `<path_to_kak_binary>/../share/kak/rc/filetype`. A symbolic link can be used: change to the `filetype` directory `cd <path_to_kak_binary/../share/kak/rc/filetype`, make the symbolic link to `$KAKOUNE_CONFIG_DIR/pascal.kak` with `ln -s`. Symbolic links are linked relative to the directory they are made in so you will need to step up the directory tree with `..` several time to get to root before appending `$KAKOUNE_CONFIG_DIR` to the path.
+
 == This Repository is in the Public Domain
 
 The contents of this repository is in the public domain. See the UNLICENSE file for details.
 
+[bibliography]
+== Resources
+
+* [[[ke]]] https://kakoune.org/[Kakoune code editor]
+* [[[fp]]] https://www.freepascal.org/[Free Pascal]
