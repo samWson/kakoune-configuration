@@ -34,5 +34,6 @@ add-highlighter shared/pascal/multiline-comment region -match-capture '\{' '\}' 
 
 add-highlighter shared/pascal/code/keyword regex \b(?i)(absolute|and|array|asm|begin|case|const|constructor|destructor|div|do|downto|else|end|file|for|function|goto|if|implementation|in|inherited|inline|interface|label|mod|nil|not|object|of|operator|or|packed|procedure|program|record|reintroduce|repeat|self|set|shl|shr|string|then|to|type|unit|until|uses|var|while|with|xor|as|class|dispinterface|except|exports|finalization|finally|initialization|inline|is|library|on|out|packed|property|raise|resourcestring|threadvar|try|include|exclude)\b 0:keyword
 add-highlighter shared/pascal/code/operator regex (\+|-|\*|\*{2}|/|<<|>>|><|<=|=|<>|<|>|>=|:=|\+=|-=|\*=|/=) 0:operator
+add-highlighter shared/pascal/code/type regex \b(?i)(integer|shortint|smalltint|longint|longword|int64|byte|word|cardinal|qword|boolean|bytebool|wordbool|longbool|qwordbool|char)(\b) 0:type
 
 ]
